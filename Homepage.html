@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .Navbar{
+        display: flex;
+        padding: 200px;
+        padding-top: 50px;
+        padding-bottom: 20px;
+        background-color: #F1EFE7;
+        overflow: hidden;
+    }
+    #menu{
+        margin: 3%;
+        margin-top: 0;
+        margin-bottom: 0;
+        text-align: center;
+    }
+    .image-logo{
+       
+    }
+    .image-logo img{
+        border-radius: 100%;
+        width: 50%;
+    }
+    .Image-hasselt{
+        height: 800px;
+        overflow: hidden;
+    }
+    .Image-hasselt img{
+        object-position: 0px -100px;
+    }
+    .Navbar a{
+        -webkit-text-stroke: 1px black;
+        text-decoration:none;
+        color: transparent;
+        font-size: 2vw;
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        transition: color 0.3s ease-in-out ;
+        
+    }
+    @keyframes lijn{
+        from{
+        -webkit-text-stroke:1px black;
+        }
+        to{
+            -webkit-text-stroke:1px cornflowerblue;
+        }
+    }
+    .Navbar a:hover{
+        color:cornflowerblue;
+        animation-name: lijn;
+        animation-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-text-stroke: 1px cornflowerblue;
+    }   
+</style>
+<body>
+<div class="Navbar">
+        <div class="image-logo"><img src="logo.jpg"></div>
+        <div class="menu1" id="menu"><a href="">Home</a></div>
+        <div class="menu2" id="menu"><a href="">Eten</a></div>
+        <div class="menu3" id="menu"><a href="">Bezienswaardigheden</a></div>
+        <div class="menu4" id="menu"><a href="">Overnachten</a></div>
+        <div class="menu5" id="menu"><a href="">Contact</a></div>
+</div>
+    <div class="Image-hasselt"><img src="hasselt.jpg" width="100%"></div>
+</body>
+</html>
