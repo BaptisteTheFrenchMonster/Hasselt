@@ -54,13 +54,85 @@
     .Links{
         flex:1;
         width: 50%;
+        margin-right: 20px;
     }
     .Rechts{
         flex: 1;
         width: 50%;
+        height: 800px;
+        overflow: hidden;
+    }
+    .Eten{
+        margin-bottom: 10px;
+        position: relative;
+    }
+    .Eten-Image{
+        height: 390px;
+        overflow: hidden;
+    }
+    .Eten-Image img{
+        position:relative;
+        height: 500px;
+        object-position: -100px -00px;
+    }
+    .Overnachten{
+        padding-top: 10px;
+        position: relative;
+    }
+    .Overnachten-Image{
+        height: 390px;
+        overflow: hidden;
+    }
+    .Overnachten-Image img{
+        position:relative;
+        height: 700px;
+        object-position: 0px -200px;
     }
     .Bezienswaardigheden{
+        position: relative;
+    }
+    .Bezienswaardigheden-Image{
         overflow: hidden;
+        position: relative;
+    }
+    .Bezienswaardigheden-Image img{
+        position:relative;
+        height: 800px;
+        object-position: -200px 0px;
+    }
+    .Algemene-Hoofding{
+        position: absolute;
+        top: 5%;
+        left: 10%;
+        margin-top:0;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 1.5vw;
+        color: whitesmoke;
+    }
+    .Algemene-Hoofding h2{
+        text-shadow: 0px 0px 5px  white;
+    }
+    .Text-Links{
+        position: absolute;
+        top: 50%;
+        left: 15%;
+        font-size: 1.5vw;
+        font-family:unset;
+        color:whitesmoke;
+        width: 80%;
+    }
+    .Text-Links span{
+        background-color:indianred;
+    }
+    .Text-Rechts{
+        position: absolute;
+        top: 30%;
+        left: 15%;
+        font-size: 1.5vw;
+        font-family:unset;
+        color:whitesmoke;
+        width: 80%;
+        background-color: indianred;
     }
     .Navbar a{
         -webkit-text-stroke: 1px whitesmoke;
@@ -91,30 +163,55 @@
 <div class="Navbar">
     <div class="image-logo"><img src="logo.png"></div>
     <div class="menu-items">
-        <div class="menu1" id="menu"><a href="">HOME</a></div>
+        <div class="menu1" id="menu"><a href="Homepage.html">HOME</a></div>
         <div class="menu2" id="menu"><a href="">ETEN</a></div>
-        <div class="menu3" id="menu"><a href="">BEZIENSWAARDIGHEDEN</a></div>
+        <div class="menu3" id="menu"><a href="Bezienswaardigheden.html">BEZIENSWAARDIGHEDEN</a></div>
         <div class="menu4" id="menu"><a href="">OVERNACHTEN</a></div>
-        <div class="menu5" id="menu"><a href="">Contact</a></div> 
+        <div class="menu5" id="menu"><a href="Contact.html">Contact</a></div> 
     </div>
     
 </div>
     <div class="Image-hasselt"><img src="hasselt.jpg" width="100%"></div>
-<h1 class="Info-Hasselt">Hasselt is de hoofdstad van de provincie Limburg en de ideale bestemming voor een stedentrip. Winkels, boetiekjes, conceptstores, gezellige restaurants, gezellige terrasjes... alles is op loopafstand. Eén sleutelwoord: winkelen! Overal in het straatbeeld kom je toffe street art tegen. Aan de groene rand van de stad kom je helemaal tot rust. Of neem plaats op een van de vele comfortabele terrassen. 's Avonds kunt u kiezen uit talloze restaurants, elk met een eigen keuken.</h1>
+<h1 class="Info-Hasselt"><b>Hasselt</b> is de hoofdstad van de provincie Limburg en de ideale bestemming voor een stedentrip. Winkels, boetiekjes, conceptstores, gezellige restaurants, gezellige terrasjes... alles is op loopafstand. Eén sleutelwoord: winkelen! Overal in het straatbeeld kom je toffe street art tegen. Aan de groene rand van de stad kom je helemaal tot rust. Of neem plaats op een van de vele comfortabele terrassen. 's Avonds kunt u kiezen uit talloze restaurants, elk met een eigen keuken.</h1>
 <div class="Informatie">
     <div class="Links">
         <div class="Eten">
-
+            <div class="Eten-Image">
+                <img src="EtenHomePage-afbeelding.jpg" alt="">
+            </div>
+            <div class="Algemene-Hoofding">
+                <h2>Eten</h2>
+            </div>
+            <div class="Text-Links">
+                <span>In Hasselt, België, geniet je van de beroemde Limburgse vlaaien en hartverwarmende stoofpotjes, vergezeld van heerlijke Belgische bieren. Ontdek de levendige markten en voedselfestivals voor een ware smaakbeleving.</span>
+            </div>
         </div>
         <div class="Overnachten">
-
+            <div class="Overnachten-Image">
+                 <img src="OvernachtenHomePage-afbeelding.png" alt="">
+            </div>
+            <div class="Algemene-Hoofding">
+                <h2>Overnachten</h2>
+            </div>
+            <div class="Text-Links">
+                <span>Ontdek comfortabel overnachten in Hasselt, met diverse opties van luxe boetiekhotels tot knusse bed & breakfasts. Geniet van weelderige voorzieningen en een centrale locatie voor het verkennen van de stad en de omliggende regio.</span>
+            </div>
         </div>
     </div>
     <div class="Rechts">
         <div class="Bezienswaardigheden">
-            <div class=""><img src="Hasselt-Japanese-Tuin.jpg"></div>
+            <div class="Bezienswaardigheden-Image">
+                <img src="Hasselt-Japanese-Tuin.jpg">
+            </div>
+            <div class="Algemene-Hoofding">
+                <h2>Bezienswaardigheden</h2>
+            </div>
+            <div class="Text-Rechts">
+                <span>Hasselt, België, charmeert bezoekers met zijn imposante Sint-Quintinuskathedraal en betoverende geplaveide straten bezaaid met boetiekjes en cafés. Ontdek de rijke geschiedenis in het Modemuseum Hasselt en het Jenevermuseum, of geniet van een vredige ontsnapping in het weelderige groen van het Kapermolenpark en het Japanse Tuinpark. Hasselt belooft een betoverende mix van culturele pracht en natuurlijke schoonheid.</span>
+            </div>
         </div>
+        
     </div>
-    </div>
+</div>
 </body>
 </html>
