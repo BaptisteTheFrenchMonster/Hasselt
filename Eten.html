@@ -86,6 +86,7 @@
 .Restaurants-Images img{
     width: 100%;
     object-position: 0px -80px;
+    transition: filter 0.3s;
 }
 .hoofding-restaurants{
     position: absolute;
@@ -153,11 +154,14 @@
             width: 20%;
         }
     }  
-    .Lijn-onder-hoofding:hover{
+    .Restaurants-Algemeen:hover .Lijn-onder-hoofding{
         animation-name: Hoofding-Lijn;
-        animation-duration: 0.3s;
+        animation-duration: 0.5s;
         width: 20%;
     }
+    .Restaurants-Algemeen:hover img {
+            filter: brightness(75%);
+        }
 </style>
 <body>
     <div class="Navbar">
