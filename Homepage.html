@@ -50,6 +50,7 @@
     }
     .Informatie{
         display: flex;
+        margin-bottom: 20px;
     }
     .Links{
         flex:1;
@@ -195,6 +196,10 @@
         font-size: 20px;
         text-align: center;
     }
+    #elementen:hover img {
+            filter: brightness(75%);
+            transition-duration: 0.5s;
+        }
 </style>
 <body>
 <div class="Navbar">
@@ -212,6 +217,7 @@
 <div class="Informatie">
     <div class="Links">
         <div class="Eten">
+            <a href="Eten.html" id="elementen">
             <div class="Eten-Image">
                 <img src="EtenHomePage-afbeelding.jpg" alt="">
             </div>
@@ -221,8 +227,10 @@
             <div class="Text-Links">
                 <span>In Hasselt, België, geniet je van de beroemde Limburgse vlaaien en hartverwarmende stoofpotjes, vergezeld van heerlijke Belgische bieren. Ontdek de levendige markten en voedselfestivals voor een ware smaakbeleving.</span>
             </div>
+            </a>
         </div>
-        <div class="Overnachten">
+        <div class="Overnachten" id="elementen">
+            <a href="">
             <div class="Overnachten-Image">
                  <img src="OvernachtenHomePage-afbeelding.png" alt="">
             </div>
@@ -232,10 +240,12 @@
             <div class="Text-Links">
                 <span>Ontdek comfortabel overnachten in Hasselt, met diverse opties van luxe boetiekhotels tot knusse bed & breakfasts. Geniet van weelderige voorzieningen en een centrale locatie voor het verkennen van de stad en de omliggende regio.</span>
             </div>
+            </a>
         </div>
     </div>
     <div class="Rechts">
-        <div class="Bezienswaardigheden">
+        <div class="Bezienswaardigheden" id="elementen">
+            <a href="Bezienswaardigheden.html">
             <div class="Bezienswaardigheden-Image">
                 <img src="Hasselt-Japanese-Tuin.jpg">
             </div>
@@ -245,6 +255,7 @@
             <div class="Text-Rechts">
                 <span>Hasselt, België, charmeert bezoekers met zijn imposante Sint-Quintinuskathedraal en betoverende geplaveide straten bezaaid met boetiekjes en cafés. Ontdek de rijke geschiedenis in het Modemuseum Hasselt en het Jenevermuseum, of geniet van een vredige ontsnapping in het weelderige groen van het Kapermolenpark en het Japanse Tuinpark. Hasselt belooft een betoverende mix van culturele pracht en natuurlijke schoonheid.</span>
             </div>
+            </a>
         </div>
         
     </div>
