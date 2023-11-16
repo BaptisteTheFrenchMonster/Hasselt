@@ -84,7 +84,106 @@
         transition-duration: 0.3s;
         -webkit-text-stroke: 1px grey;
     }   
+    
+div#titel{
+    text-align: center;
+    font-size: 30px;    
+    text-transform: uppercase ;
+    background-color:indianred;
+    margin: 100px;
+    margin-top: 20px;
+    border-radius: 50px;
+    color:white;
+    padding-top: 2cm;
+    padding-bottom: 1cm;
+}
+div#Kleine-titel{
+    text-align: center;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding-top: 20px;
+}
+
+
+label{
+    text-transform: uppercase;
+    color: cadetblue;
+
+}
+
+input{
+    height: 30px;
+    width: 280px;
+}
+
+input#button{
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 20px;
+}
+div#invoer{
+    padding-top: 30px;
+    align-items: center;
+    text-align: center;
+}
+form{
+    margin-bottom: 100px;
+}
+
+
+
+.Alle-inhoud-footer{
+        display: flex;
+        background-color: #e0d7b6;
+        border-top: 1px solid black;
+    } 
+    .Center-inhoud1{
+        display: flex;
+        background-color: whitesmoke;
+    }
+    .footer-inhoud1{
+        margin: 50px;
+        margin-left: 150px;
+        border-right: 1px solid black;
+    }
+    .footer-LogoHasselt{
+        margin-top: 30px;
+    }
+    .SocialMedia-image{
+        margin: 40px;
+    }
+    .Inhoud-contacts{
+        margin-left: auto;
+        margin-right: 150px;
+        margin-top: 49px;
+        margin-bottom: 49px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-left: 1px solid black;
+    }
+    .hoofdtitel-inhoud2{
+        font-size: 50px;
+    }
+    .contacts{
+        font-size: 20px;
+        text-align: center;
+    }
 </style>
+<script>
+    function displayMessage() {
+var voornaam = document.getElementById("voornaam").value;
+var naam = document.getElementById("naam").value;
+var email = document.getElementById("email").value;
+var vraag = document.getElementById("vraag").value;
+var message = "Bedankt voor je bericht, " + voornaam + " " + naam + "!" +
+          "\nWe zullen zo snel mogelijk reageren op het volgende e-mailadres: " + email +
+          "\n\nJe vraag:\n" + vraag;
+alert(message);
+
+
+return false;
+}
+</script>
 <body>
     <div class="Navbar">
         <div class="image-logo"><img src="logo.png"></div>
@@ -95,17 +194,73 @@
             <div class="menu4" id="menu"><a href="">OVERNACHTEN</a></div>
             <div class="menu5" id="menu"><a href="Contact.html">Contact</a></div> 
         </div>
-    </div>     
-    <h1 class="hoofding-contact">Contacteer Ons</h1>
+    </div>    
+            <!--Titel-->
+    <div id="blok">
+        <div id="titel">
+            <h1 id="Grote-titel">Contact</h1><br>
 
-    <!-- Hier komt nog javascript later-->
-            <h2 class="hoofdingen-inputtext">E-mail</h2>
-            <div class="container">
-                <input type="text" class="input-texten">
+        </div>
+    </div>
+    <!--Klein Titel-->
+    <div id="Kleine-titel">
+        <h2 id="Vraagje">Stel gerust een vraag.</h2><br>
+
+    </div>
+    <div id="invoer">
+        
+
+        <section id="kolom1">
+
+        </section>
+        <section id="kolom2">
+    <form onsubmit="return displayMessage();">
+        <label  for="voornaam">Voornaam:</label><br>
+        <input type="text" id="voornaam" name="voornaam" required><br><br>
+
+        <label for="naam">Naam:</label><br>
+        <input type="text" id="naam" name="naam" required><br><br>
+
+        <label for="email">E-mail:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        <br><br>
+        <label for="vraag">Vraag:</label><br>
+        <textarea id="vraag" name="vraag" rows="4" cols="50" required></textarea><br><br>
+
+        <input id="button" type="submit" value="Verzenden">
+    </div>
+    </section>
+    <footer class="footer">
+        <div class="Alle-inhoud-footer">
+            <div class="footer-inhoud1">
+                <div class="Center-inhoud1">
+                    <div class="footer-LogoHasselt">
+                      <a href="Homepage.html">
+                          <img src="footer-logo.png" alt="" width="300px">
+                      </a>
+                    </div>
+                    <div class="sociale-media">
+                        <div class="SocialMedia-image">
+                            <a href="https://www.instagram.com/visithasselt" target="_blank">
+                                <img src="instagram-logo-noir.png" alt="" width="40px">
+                            </a>
+                        </div>
+                        <div class="SocialMedia-image">
+                            <a href="https://www.facebook.com/visithasselt" target="_blank">
+                                <img src="logo-facebook-noir.png" alt="" width="40px">
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <h2 class="hoofdingen-inputtext">We luisteren ...</h2>
-            <div class="container" id="Uitleg-text">
-                <input type="text" class="input-texten">
-            </div>
+    
+                <div class="Inhoud-contacts">
+                    <h1 class="hoofdtitel-inhoud2">Visit Hasselt</h1>
+                    <div class="footer-contacts">
+                        <p class="contacts">Maastrichterstraat 59<br>3500 Hasselt</p>
+                    </div>
+                </div>  
+        </div>
+    </footer>
 </body>
 </html>
